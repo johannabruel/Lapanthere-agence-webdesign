@@ -13,11 +13,11 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
-	<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.0/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.min.js"></script>
-	<script src="./js/formHandler.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.0/dist/jquery.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js" defer></script>
+	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/jqBootstrapValidation.min.js" defer></script>
+	<script src="./js/formHandler.min.js" defer></script>
     <title>Contact La Panthère - Agence de webdesign à Lyon</title>
 
 
@@ -79,7 +79,7 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
-					<form id="form_1" success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form id="form_1">
 						<fieldset>
 							<legend>Formulaire de contact à compléter</legend>
 							<div class="mg-md">
@@ -97,6 +97,7 @@
 							<div class="mg-md">
 								<label class="form-label" for="Select">Comment nous avez-vous connu ?</label><br>
 								<select id="Select" class="form-label" required>
+									<option value="">veuillez choisir une réponse</option>
 									<option value="reseaux-sociaux">Réseaux sociaux</option>
 									<option value="recherche-internet">Un moteur de recherche</option>
 									<option value="site-web">Notre site web</option>
